@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,9 +13,11 @@
 		2ADD56DF263ADE0B004A5CC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD56DD263ADE0B004A5CC3 /* Main.storyboard */; };
 		2ADD56E1263ADE0D004A5CC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD56E0263ADE0D004A5CC3 /* Assets.xcassets */; };
 		2ADD56E4263ADE0D004A5CC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADD56E2263ADE0D004A5CC3 /* LaunchScreen.storyboard */; };
+		FCB8639320F8429AE21B150B /* Pods_SCCC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B20B0B35B58823EB0E6382 /* Pods_SCCC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11D9B9F4CF14C3E6908A7D69 /* Pods-SCCC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCCC.release.xcconfig"; path = "Target Support Files/Pods-SCCC/Pods-SCCC.release.xcconfig"; sourceTree = "<group>"; };
 		2ADD56D4263ADE0B004A5CC3 /* SCCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SCCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2ADD56D7263ADE0B004A5CC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2ADD56D9263ADE0B004A5CC3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		2ADD56E0263ADE0D004A5CC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2ADD56E3263ADE0D004A5CC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2ADD56E5263ADE0D004A5CC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43B20B0B35B58823EB0E6382 /* Pods_SCCC.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SCCC.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		940D1D40B4E7DE169A1EC898 /* Pods-SCCC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SCCC.debug.xcconfig"; path = "Target Support Files/Pods-SCCC/Pods-SCCC.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FCB8639320F8429AE21B150B /* Pods_SCCC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				2ADD56D6263ADE0B004A5CC3 /* SCCC */,
 				2ADD56D5263ADE0B004A5CC3 /* Products */,
+				E8F8B4845475B6888109A3CB /* Pods */,
+				DF5248A5EC40BD35D0789BCD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,23 @@
 			path = SCCC;
 			sourceTree = "<group>";
 		};
+		DF5248A5EC40BD35D0789BCD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43B20B0B35B58823EB0E6382 /* Pods_SCCC.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8F8B4845475B6888109A3CB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				940D1D40B4E7DE169A1EC898 /* Pods-SCCC.debug.xcconfig */,
+				11D9B9F4CF14C3E6908A7D69 /* Pods-SCCC.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2ADD56E8263ADE0D004A5CC3 /* Build configuration list for PBXNativeTarget "SCCC" */;
 			buildPhases = (
+				2BFFA64EA54525A0028D1D72 /* [CP] Check Pods Manifest.lock */,
 				2ADD56D0263ADE0B004A5CC3 /* Sources */,
 				2ADD56D1263ADE0B004A5CC3 /* Frameworks */,
 				2ADD56D2263ADE0B004A5CC3 /* Resources */,
+				1268279C34369183B25E2940 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1268279C34369183B25E2940 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SCCC/Pods-SCCC-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SCCC/Pods-SCCC-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SCCC/Pods-SCCC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2BFFA64EA54525A0028D1D72 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SCCC-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2ADD56D0263ADE0B004A5CC3 /* Sources */ = {
@@ -283,6 +351,7 @@
 		};
 		2ADD56E9263ADE0D004A5CC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 940D1D40B4E7DE169A1EC898 /* Pods-SCCC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +371,7 @@
 		};
 		2ADD56EA263ADE0D004A5CC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D9B9F4CF14C3E6908A7D69 /* Pods-SCCC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
